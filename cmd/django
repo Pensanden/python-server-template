@@ -1,0 +1,3 @@
+#! /bin/sh
+# A proxy to manage.py file in the rest application forwards all args
+python ../src/application/rest/django/manage.py $@
