@@ -15,16 +15,16 @@ class PgUserModel(BasePgModel, AbstractUser):
         'The groups this user belongs to. A user will get all permissions '
         'granted to each of their groups.'
         ,
-        related_name="rasa_user_set",
-        related_query_name="rasa_user",
+        related_name="",
+        related_query_name="",
     )
     user_permissions = models.ManyToManyField(
         Permission,
         verbose_name='user permissions',
         blank=True,
         help_text='Specific permissions for this user.',
-        related_name="rasa_user_set",
-        related_query_name="rasa_user",
+        related_name="",
+        related_query_name="",
     )
 
     class Meta:

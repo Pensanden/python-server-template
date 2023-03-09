@@ -5,9 +5,6 @@ from uuid import UUID
 
 from dataclasses_json import dataclass_json
 
-from rasa_server_commons.utils.dataclass_utils import iso_datetime_field
-
-
 @dataclass_json
 @dataclass(repr=False)
 class BaseEntity(metaclass=abc.ABCMeta):
