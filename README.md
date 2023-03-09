@@ -13,4 +13,5 @@ TODO:
 - Elastic repos abstractions
 - High Level Data modeling for elk and redis
 - redis script sample 
-- 
+- UOW
+- Deployment
